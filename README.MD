@@ -22,8 +22,8 @@ MONGODB:mongodb+srv://<username>:<password>@cluster0.vrheg.mongodb.net/<dbname>?
 
 * ***running application***
 
- *** NPM INSTALL  ***
- *** NPM START    ***
+* *** NPM INSTALL  ***
+* *** NPM START    ***
 
 http://localhost:9000/
 
