@@ -67,4 +67,28 @@ const put = async (req, res) => {
   }
 };
 
-module.exports = { signin, signup, put };
+const cancel = async (req, res) => {
+  try {
+    const { email } = req.params;
+    const { password, name } = req.body;
+    if (!email || !email.trim())
+      return res.status(400).json({ message: 'Email invalid' });
+    if (!password || !password.trim())
+      return res.status(400).json({ message: 'Password invalid' });
+    if (!name || !name.trim())
+      return res.status(400).json({ message: 'Name invalid' });
+
+    const account = await accounts.findOne({ email });
+    if (!account)
+      return res.status(404).json({ message: `Not found ${email}` });
+
+    account.password = password;
+    account.name = name;
+    await account.save();
+    return res.status(200).json({ email, name });
+  } catch {
+    return res.status(500).json({ message: 'Internal server error' });
+  }
+};
+
+module.exports = { signin, signup, put, cancel };

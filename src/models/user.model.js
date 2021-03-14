@@ -6,6 +6,9 @@ const user = new mongoose.Schema(
     orcamentos: [
       {
         title: { type: String, required: false },
+        valorPrevisto: { type: Number, required: true },
+        valorReal: { type: Number, required: true },
+        finalizado: { type: Boolean, required: false },
         receitas: [
           {
             description: { type: String, required: false },

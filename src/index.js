@@ -14,8 +14,8 @@ app.use(bodyParser.json());
 
 const accountRoute = require('./routes/account.route');
 const userRoute = require('./routes/user.route');
-app.use('/api/accounts', accountRoute);
-app.use('/api/users', userRoute);
+app.use('/api/v1/accounts', accountRoute);
+app.use('/api/v1/users', userRoute);
 
 const port = process.env.PORT || 9000;
 app.listen(port, () => console.log(`api port ${port}`));
