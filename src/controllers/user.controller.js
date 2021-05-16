@@ -7,8 +7,9 @@ const userJson = (data) => ({
     valorPrevisto: l.valorPrevisto,
     valorReal: l.valorReal,
     finalizado: l.finalizado,
-    receitas: l.receitas.map(t => ({
+    despesas: l.despesas.map(t => ({
       description: t.description,
+      valorDespesa: t.valorDespesa,
       done: t.done,
     })),
   })),

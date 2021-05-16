@@ -9,9 +9,10 @@ const user = new mongoose.Schema(
         valorPrevisto: { type: Number, required: true },
         valorReal: { type: Number, required: true },
         finalizado: { type: Boolean, required: false },
-        receitas: [
+        despesas: [
           {
             description: { type: String, required: false },
+            valorDespesa: { type: Number, required: true },
             done: { type: Boolean, required: false }
           }
         ]
