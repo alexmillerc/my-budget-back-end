@@ -24,6 +24,7 @@ MONGODB:mongodb+srv://<username>:<password>@cluster0.vrheg.mongodb.net/<dbname>?
 
 * ***NPM INSTALL***
 * ***NPM START***
+* ***NPM TEST***
 
 http://localhost:9000/
 

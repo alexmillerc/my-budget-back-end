@@ -18,4 +18,6 @@ app.use('/api/v1/accounts', accountRoute);
 app.use('/api/v1/users', userRoute);
 
 const port = process.env.PORT || 9000;
-app.listen(port, () => console.log(`api port ${port}`));
+let server = app.listen(port, () => console.log(`api port ${port}`));
+
+module.exports = server;
