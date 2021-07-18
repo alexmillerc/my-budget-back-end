@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 
 // Testes de API USERS - MONGODB
 
-describe('Teste 08 - /GET User não encontrado', () => {
+describe('/GET User não encontrado', () => {
   it('User não encontrado', (done) => {
     chai.request('http://localhost:9000')
       .get(`/api/v1/users/teste@gmail.com`)
@@ -19,7 +19,7 @@ describe('Teste 08 - /GET User não encontrado', () => {
   });
 });
 
-describe('Teste 09 - /POST Users criado', () => {
+describe('/POST Users criado', () => {
   it('Users criado', (done) => {
     let body = {
       email: "teste@gmail.com"
@@ -35,7 +35,7 @@ describe('Teste 09 - /POST Users criado', () => {
   });
 });
 
-describe('Teste 10 - /GET User encontrado', () => {
+describe('/GET User encontrado', () => {
   it('User encontrado', (done) => {
     chai.request('http://localhost:9000')
       .get(`/api/v1/users/teste@gmail.com`)

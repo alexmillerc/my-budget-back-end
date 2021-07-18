@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 
 // Testes de API ACCOUNTS - MONGODB
 
-describe('Teste 04 - /GET  Account não encontra', () => {
+describe('/GET  Account não encontra', () => {
   it('Account não encontra', (done) => {
     let body = {
       email: "teste2@gmail.com",
@@ -25,7 +25,7 @@ describe('Teste 04 - /GET  Account não encontra', () => {
   });
 });
 
-describe('Teste 05 - /GET  Account inválida', () => {
+describe('/GET  Account inválida', () => {
   it('Account inválida', (done) => {
     let body = {
       email: "teste",
@@ -42,7 +42,7 @@ describe('Teste 05 - /GET  Account inválida', () => {
   });
 });
 
-describe('Teste 06 - /GET  Password inválido', () => {
+describe('/GET  Password inválido', () => {
   it('Password inválido', (done) => {
     let body = {
       email: "teste@gmail.com",
@@ -59,7 +59,7 @@ describe('Teste 06 - /GET  Password inválido', () => {
   });
 });
 
-describe('Teste 07 - /GET  Account encontrada', () => {
+describe('/GET  Account encontrada', () => {
   it('Account encontrada', (done) => {
     let body = {
       email: "teste@gmail.com",
