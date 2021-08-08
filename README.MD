@@ -26,7 +26,8 @@ MONGODB:mongodb+srv://<username>:<password>@cluster0.vrheg.mongodb.net/<dbname>?
 * ***NPM START***
 * ***NPM TEST***
 
-http://localhost:9000/
+- Local:            http://localhost:9000/
+- On Your Network:  https://my-budget-back-end.herokuapp.com
 
 
 
